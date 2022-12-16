@@ -16,6 +16,19 @@ fun main(args: Array<String>) {
         println(priority)
         priority
     }.sum())
+
+    var acc = mutableListOf<String>()
+    var count = 0
+    var i = 0
+    for (it in actualList) {
+        if (count >= 3) {
+            i += 1
+            count = 0
+        }
+
+        count += 1
+        acc[i] = acc[i] + it
+    }
 }
 
 fun findDup(s: String): Char {

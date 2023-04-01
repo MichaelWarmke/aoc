@@ -31,7 +31,11 @@ kotlin {
         }
     }
     sourceSets {
-        val commonMain by getting
+        val commonMain by getting {
+            dependencies {
+                implementation("khttp:khttp:0.1.0")
+            }
+        }
         val commonTest by getting {
             dependencies {
                 implementation(kotlin("test"))
@@ -42,6 +46,8 @@ kotlin {
                 implementation("io.ktor:ktor-server-netty:1.6.7")
                 implementation("io.ktor:ktor-html-builder:1.6.7")
                 implementation("org.jetbrains.kotlinx:kotlinx-html-jvm:0.7.2")
+                implementation("com.google.code.gson:gson:2.10")
+                implementation("khttp:khttp:0.1.0")
             }
         }
         val jvmTest by getting
@@ -50,6 +56,8 @@ kotlin {
                 implementation("org.jetbrains.kotlin-wrappers:kotlin-react:17.0.2-pre.290-kotlin-1.6.10")
                 implementation("org.jetbrains.kotlin-wrappers:kotlin-react-dom:17.0.2-pre.290-kotlin-1.6.10")
                 implementation("org.jetbrains.kotlin-wrappers:kotlin-react-css:17.0.2-pre.290-kotlin-1.6.10")
+                implementation("com.google.code.gson:gson:2.10")
+                implementation("khttp:khttp:0.1.0")
             }
         }
         val jsTest by getting

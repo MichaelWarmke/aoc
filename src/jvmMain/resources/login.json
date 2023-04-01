@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "message_type": 15,
+  "message_id": 12,
+  "body": [
+    {
+      "message_type": 15,
+      "server_login_by_password": {
+        "remember_me": true,
+        "phone": "",
+        "password": "",
+        "stats_data": ""
+      }
+    }
+  ],
+  "is_background": false
+}

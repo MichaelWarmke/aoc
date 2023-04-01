@@ -10,6 +10,7 @@ import io.ktor.server.netty.Netty
 import io.ktor.http.content.resources
 import io.ktor.http.content.static
 import kotlinx.html.*
+import khttp.*
 
 fun HTML.index() {
     head {
